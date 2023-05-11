@@ -1,0 +1,44 @@
+@charset "UTF-8";
+/* CSS Document */
+
+.hidden {
+    display: none;
+}
+
+#container {
+    margin: 20px auto;
+    width: 428px;
+    border: solid 1px #333;
+    background: #efefef;
+    border-radius: 10px;
+}
+
+@font-face {
+    font-family: 'Koho';
+    src: url('../fonts/koho-regular-webfont.woff.eot');
+    src: url('../fonts/koho-bold-webfont.woff.eot?iefix') format('embedded-opentype'),
+    url('../fonts/koho-bold-webfont.woff') format('woff'),
+    url('../fonts/KoHo-Bold.ttf') format('truetype'),
+    url('../fonts/koho-bold-webfont.svg#koho') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+#mainContent {
+        font-family: 'KoHo', sans-serif;
+        color: darkorange;
+        display: grid;
+        grid-template-columns: repeat(4, 85px);
+        grid-column-gap: 16px;
+        padding-left: 20px;
+        padding-right: 20px;
+}
+
+article {
+    grid-column: 1/-1;
+}
+
+img {
+    margin-top: 20px;
+    margin-bottom: 30px;
+}
